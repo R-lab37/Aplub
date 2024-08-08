@@ -80,6 +80,43 @@
             background-color: #333;
             color: #fff;
         }
+
+        /* Careers Section */
+        #careers {
+            background-color: var(--light-grey);
+            padding: 60px 0;
+        }
+
+        #careers h2 {
+            color: var(--brand-dark);
+            margin-bottom: 30px;
+        }
+
+        .job-listing {
+            margin-bottom: 20px;
+        }
+
+        .job-listing h5 {
+            color: var(--brand-dark);
+        }
+
+        .job-listing p {
+            color: var(--brand-dark);
+        }
+
+        .job-listing .btn-primary {
+            background-color: var(--brand-blue);
+            border-color: var(--brand-blue);
+        }
+
+        .job-listing .btn-primary:hover {
+            background-color: var(--brand-yellow);
+            border-color: var(--brand-yellow);
+        }
+
+        .form-group label {
+            color: var(--brand-dark);
+        }
     </style>
 </head>
 
@@ -99,6 +136,7 @@
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#careers">Careers</a></li>
                 <li class="nav-item"><a class="nav-link" href="#development-process"> Process</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -195,6 +233,62 @@
                             <a href="#" class="btn btn-success">Learn More</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Careers Section -->
+    <section id="careers" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Careers</h2>
+            <p class="text-center">Join our dynamic team and help us build innovative solutions!</p>
+
+            <div class="row">
+                <!-- Job Listing -->
+                <div class="col-md-6">
+                    <h4>Available Positions</h4>
+                    <div class="job-listing">
+                        <h5>Software Engineer</h5>
+                        <p>We are looking for a skilled Software Engineer to join our development team.</p>
+                        <button class="btn btn-primary">Apply Now</button>
+                    </div>
+                    <div class="job-listing">
+                        <h5>UI/UX Designer</h5>
+                        <p>We need a creative UI/UX Designer to design intuitive and user-friendly interfaces.</p>
+                        <button class="btn btn-primary">Apply Now</button>
+                    </div>
+                    <!-- Add more job listings as needed -->
+                </div>
+
+                <!-- Application Form -->
+                <div class="col-md-6">
+                    <h4>Apply Now</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="job-name">Position</label>
+                            <select class="form-control" id="job-name" required>
+                                <option>Select a position</option>
+                                <option>Software Engineer</option>
+                                <option>UI/UX Designer</option>
+                                <!-- Add more positions as needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="applicant-name">Name</label>
+                            <input type="text" class="form-control" id="applicant-name" placeholder="Your Name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="applicant-email">Email</label>
+                            <input type="email" class="form-control" id="applicant-email" placeholder="Your Email"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="applicant-resume">Upload Resume</label>
+                            <input type="file" class="form-control-file" id="applicant-resume" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </form>
                 </div>
             </div>
         </div>
