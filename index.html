@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplub - Software Development Company</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar-brand img {
+            margin-right: 10px;
+        }
+
+        .navbar-brand span {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #FFFF00 !important;
+        }
+
+        .hero-section {
+            background: url('./assets/hero-bg.png') no-repeat center center;
+            background-size: cover;
+            padding: 100px 0;
+        }
+
+        .hero-section h1 {
+            font-weight: 600;
+            font-size: 3rem;
+        }
+
+        .btn-primary {
+            background-color: #365AFF;
+            border-color: #fcfcfc;
+        }
+
+        .btn-primary:hover {
+            background-color: #365AFF;
+            border-color: #FFFF00;
+        }
+
+        .card-title {
+            font-weight: 600;
+        }
+
+        .development-process {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .development-process h2 {
+            font-weight: 600;
+        }
+
+        .process-step {
+            margin-bottom: 30px;
+        }
+
+        .process-step img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo.png" alt="Aplub Logo" width="30" height="30" class="d-inline-block align-top">
+            <span>Aplub</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#development-process"> Process</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center text-white">
+        <div class="container">
+            <h1 class="display-4">Welcome to Aplub</h1>
+            <p class="lead">Innovative Software Solutions for Your Business</p>
+            <a href="#products" class="btn btn-primary btn-lg">Explore Our Products</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Our Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./assets/products/cretorstudio.png" class="card-img-top" alt="Crt Studio">
+                        <div class="card-body">
+                            <h5 class="card-title">Crt Studio</h5>
+                            <p class="card-text">The Creator for Ai Studio.</p>
+                            <a href="#" class="btn btn-primary">Download Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./assets/products/think.png" class="card-img-top" alt="Think">
+                        <div class="card-body">
+                            <h5 class="card-title">Think</h5>
+                            <p class="card-text">Ask Any Time, Anywhere, Anything to Think.</p>
+                            <a href="#" class="btn btn-primary">Download Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./assets/products/instaload_logo.png" class="card-img-top" alt="Instaload">
+                        <div class="card-body">
+                            <h5 class="card-title">Instaload</h5>
+                            <p class="card-text">Download Instagram videos and many more.</p>
+                            <a href="#" class="btn btn-primary">Download Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./assets/services/website.png" class="card-img-top" alt="Website Development">
+                        <div class="card-body">
+                            <h5 class="card-title">Website Development</h5>
+                            <p class="card-text">We create custom, responsive websites tailored to your business needs.
+                                From e-commerce to informational sites, our solutions are designed to enhance your
+                                online presence and user experience.</p>
+                            <a href="#" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./assets/services/app.png" class="card-img-top" alt="Mobile App Development">
+                        <div class="card-body">
+                            <h5 class="card-title">Mobile App Development</h5>
+                            <p class="card-text">We design and develop intuitive mobile applications for both Android
+                                and iOS platforms. Our apps are optimized for performance and user engagement, providing
+                                a seamless experience across devices.</p>
+                            <a href="#" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./assets/services/design.png" class="card-img-top" alt="UI/UX Design">
+                        <div class="card-body">
+                            <h5 class="card-title">UI/UX Design</h5>
+                            <p class="card-text">Our UI/UX design services focus on creating visually appealing and
+                                user-friendly interfaces. We ensure that your digital products are not only beautiful
+                                but also functional and easy to use.</p>
+                            <a href="#" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p class="text-center">Aplub is a leading software development company that provides innovative solutions
+                for businesses worldwide. Our team of experts specializes in creating custom software products and
+                services tailored to meet the unique needs of our clients.</p>
+        </div>
+    </section>
+
+    <!-- Agile Development Process Section -->
+    <section id="development-process" class="development-process py-5">
+        <div class="container">
+            <h2 class="text-center">Our Development Process</h2>
+            <p class="text-center">We follow the Agile methodology to ensure efficient and flexible project delivery.
+            </p>
+            <div class="row">
+                <div class="col-md-4 process-step text-center">
+                    <img src="./assets/process/planning.png" alt="Planning">
+                    <h5>Planning</h5>
+                    <p>Defining project goals, requirements, and timeline.</p>
+                </div>
+                <div class="col-md-4 process-step text-center">
+                    <img src="./assets/process/designing.png" alt="Design">
+                    <h5>Design</h5>
+                    <p>Creating wireframes, mockups, and prototypes.</p>
+                </div>
+                <div class="col-md-4 process-step text-center">
+                    <img src="./assets/process/deployment.png" alt="Development">
+                    <h5>Development</h5>
+                    <p>Implementing features and functionalities through coding.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 process-step text-center">
+                    <img src="./assets/process/testing.png" alt="Testing">
+                    <h5>Testing</h5>
+                    <p>Identifying and fixing bugs to ensure quality.</p>
+                </div>
+                <div class="col-md-4 process-step text-center">
+                    <img src="./assets/process/deployment.png" alt="Deployment">
+                    <h5>Deployment</h5>
+                    <p>Releasing the product to the market or end-users.</p>
+                </div>
+                <div class="col-md-4 process-step text-center">
+                    <img src="./assets/process/maintenance.png" alt="Maintenance">
+                    <h5>Maintenance</h5>
+                    <p>Providing ongoing support and updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center">Feel free to reach out to us for any inquiries or support.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p>Email: youthtechofficials@gmail.com</p>
+                    <p>Phone: +1 234 567 890</p>
+                    <p>Address: Indore, Madhya Pradesh</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 Aplub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+/* Brand Colors */
+:root {
+  --black: #000000;
+  --blue: #0000FF;
+  --red: #FF0000;
+  --green: #00FF00;
+  --yellow: #FFFF00;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(var(--blue), var(--red));
+  padding: 100px 0;
+}
+
+/* Products Section */
+#products .card {
+  border: none;
+  transition: transform 0.3s;
+}
+
+#products .card:hover {
+  transform: scale(1.05);
+}
+
+/* Services Section */
+#services .card {
+  border: none;
+  transition: transform 0.3s;
+}
+
+#services .card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: var(--black);
+}
