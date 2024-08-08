@@ -33,15 +33,37 @@
         }
 
         .hero-section {
-            background: url('./assets/hero-bg.png') no-repeat center center;
+            background: url('./assets/hero-bg.jpg') no-repeat center center;
             background-size: cover;
-            padding: 150px 0;
+            padding: 120px 0;
         }
 
         .hero-section h1 {
             font-weight: 600;
             font-size: 3rem;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
         }
+
+        /* Hero Design 
+        */
+        /* Hero Section Text Colors */
+        .text-blue {
+            color: blue;
+        }
+
+        .text-yellow {
+            color: yellow;
+        }
+
+        .text-red {
+            color: red;
+        }
+
+        .text-green {
+            color: green;
+        }
+
 
         .btn-primary {
             background-color: #365AFF;
@@ -173,10 +195,18 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section text-center text-white">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
         <div class="container">
-            <h1 class="display-4">Welcome to Aplub</h1>
-            <p class="lead">Innovative Software Solutions for Your Business</p>
+            <h1 class="display-4 rainbow-text">
+                <span class="text-blue">W</span><span class="text-yellow">e</span><span class="text-red">l</span><span
+                    class="text-green">c</span><span class="text-blue">o</span><span class="text-yellow">m</span><span
+                    class="text-red">e</span>
+                <span class="text-green">t</span><span class="text-blue">o</span>
+                <span class="text-yellow">A</span><span class="text-red">p</span><span class="text-green">l</span><span
+                    class="text-blue">u</span><span class="text-yellow">b</span>
+            </h1>
+            <p class="lead text-white">Innovative Software Solutions for Your Business</p>
             <a href="#products" class="btn btn-primary btn-lg">Explore Our Products</a>
         </div>
     </section>
