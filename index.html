@@ -90,8 +90,8 @@
         }
 
         .process-step img {
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             margin-bottom: 20px;
         }
 
@@ -163,6 +163,56 @@
         #mission .card-text {
             color: var(--black);
         }
+
+        .internship {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 300px;
+            /* Adjust this value based on your design */
+            padding: 15px;
+            background-color: #f7f7f7;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .internship h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .internship p {
+            flex-grow: 1;
+        }
+
+        .apply-button {
+            align-self: flex-start;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .apply-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 767px) {
+            .internship {
+                min-height: 250px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .internship {
+                min-height: 200px;
+            }
+        }
     </style>
 </head>
 
@@ -180,12 +230,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#careers">Careers</a></li>
-                <li class="nav-item"><a class="nav-link" href="#development-process"> Process</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#mission">Our Mission</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#development-process">Process</a></li>
+                <li class="nav-item"><a class="nav-link" href="#careers">Careers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#internships">Internship</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -204,6 +255,51 @@
             </h1>
             <p class="lead text-white">Innovative Software Solutions for Your Business</p>
             <a href="#products" class="btn btn-primary btn-lg">Explore Our Products</a>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p class="text-center">Aplub is a leading software development company that provides innovative solutions
+                for businesses worldwide. Our team of experts specializes in creating custom software products and
+                services tailored to meet the unique needs of our clients.</p>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section id="mission" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Our Mission</h2>
+            <div class="row mt-4">
+                <!-- Empower Card -->
+                <div class="col-md-4">
+                    <div class="card text-center border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">Empower</h5>
+                            <p class="card-text">Empower data-driven enterprises & Simple Solution</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Support Card -->
+                <div class="col-md-4">
+                    <div class="card text-center border-success">
+                        <div class="card-body">
+                            <h5 class="card-title">Support</h5>
+                            <p class="card-text">Support digital transformation from all angles.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Create Card -->
+                <div class="col-md-4">
+                    <div class="card text-center border-warning">
+                        <div class="card-body">
+                            <h5 class="card-title">Create</h5>
+                            <p class="card-text">Create strategic solutions to solve real-world problems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -294,6 +390,66 @@
             </div>
         </div>
     </section>
+
+
+
+    <!-- Process Section -->
+    <section id="process" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Our Process</h2>
+            <div class="text-center">
+                <img src="./assets/process/process_to_idea.svg" class="img-fluid" alt="Responsive image">
+            </div>
+            <p class="text-center mt-4">Our process involves a series of well-defined steps to ensure the successful
+                delivery of projects. Here’s a brief overview of how we work:</p>
+            <!-- Add any additional content or steps related to the process here if needed -->
+        </div>
+    </section>
+
+
+    <!-- Agile Development Process Section -->
+    <section id="development-process" class="development-process py-5">
+        <div class="container">
+            <h2 class="text-center">Our Development Process</h2>
+            <p class="text-center">We follow the Agile methodology to ensure efficient and flexible project delivery.
+            </p>
+            <div class="row">
+                <div class="col-md-4 process-step text-center">
+                    <img src="./assets/process/planning.png" alt="Planning">
+                    <h5>Planning</h5>
+                    <p>Defining project goals, requirements, and timeline.</p>
+                </div>
+                <div class="col-md-4 process-step text-center">
+                    <img src="./assets/process/designing.png" alt="Design">
+                    <h5>Design</h5>
+                    <p>Creating wireframes, mockups, and prototypes.</p>
+                </div>
+                <div class="col-md-4 process-step text-center">
+                    <img src="./assets/process/development.png" alt="Development">
+                    <h5>Development</h5>
+                    <p>Implementing features and functionalities through coding.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 process-step text-center">
+                    <img src="./assets/process/testing.png" alt="Testing">
+                    <h5>Testing</h5>
+                    <p>Identifying and fixing bugs to ensure quality.</p>
+                </div>
+                <div class="col-md-4 process-step text-center">
+                    <img src="./assets/process/deployment.png" alt="Deployment">
+                    <h5>Deployment</h5>
+                    <p>Releasing the product to the market or end-users.</p>
+                </div>
+                <div class="col-md-4 process-step text-center">
+                    <img src="./assets/process/maintenance.png" alt="Maintenance">
+                    <h5>Maintenance</h5>
+                    <p>Providing ongoing support and updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Careers Section -->
     <section id="careers" class="py-5">
         <div class="container">
@@ -374,104 +530,96 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="internships">
         <div class="container">
-            <h2 class="text-center">About Us</h2>
-            <p class="text-center">Aplub is a leading software development company that provides innovative solutions
-                for businesses worldwide. Our team of experts specializes in creating custom software products and
-                services tailored to meet the unique needs of our clients.</p>
-        </div>
-    </section>
-
-    <!-- Our Mission Section -->
-    <section id="mission" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center">Our Mission</h2>
-            <div class="row mt-4">
-                <!-- Empower Card -->
-                <div class="col-md-4">
-                    <div class="card text-center border-primary">
-                        <div class="card-body">
-                            <h5 class="card-title">Empower</h5>
-                            <p class="card-text">Empower data-driven enterprises & Simple Solution</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Support Card -->
-                <div class="col-md-4">
-                    <div class="card text-center border-success">
-                        <div class="card-body">
-                            <h5 class="card-title">Support</h5>
-                            <p class="card-text">Support digital transformation from all angles.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Create Card -->
-                <div class="col-md-4">
-                    <div class="card text-center border-warning">
-                        <div class="card-body">
-                            <h5 class="card-title">Create</h5>
-                            <p class="card-text">Create strategic solutions to solve real-world problems.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section id="process" class="py-5">
-        <div class="container">
-            <h2 class="text-center">Our Process</h2>
-            <div class="text-center">
-                <img src="./assets/process/process_to_idea.svg" class="img-fluid" alt="Responsive image">
-            </div>
-            <p class="text-center mt-4">Our process involves a series of well-defined steps to ensure the successful
-                delivery of projects. Here’s a brief overview of how we work:</p>
-            <!-- Add any additional content or steps related to the process here if needed -->
-        </div>
-    </section>
-
-
-    <!-- Agile Development Process Section -->
-    <section id="development-process" class="development-process py-5">
-        <div class="container">
-            <h2 class="text-center">Our Development Process</h2>
-            <p class="text-center">We follow the Agile methodology to ensure efficient and flexible project delivery.
-            </p>
+            <h2 class="text-center">Internships</h2>
+            <p class="text-center">Kickstart your career with our internship programs. Gain hands-on experience and work
+                with industry experts.</p>
             <div class="row">
-                <div class="col-md-4 process-step text-center">
-                    <img src="./assets/process/planning.png" alt="Planning">
-                    <h5>Planning</h5>
-                    <p>Defining project goals, requirements, and timeline.</p>
+                <!-- Internship Cards -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="internship">
+                        <h3>Web Development Intern</h3>
+                        <p>Learn and build modern websites using HTML, CSS, and JavaScript.</p>
+                        <button class="apply-button">Apply Now</button>
+                    </div>
                 </div>
-                <div class="col-md-4 process-step text-center">
-                    <img src="./assets/process/designing.png" alt="Design">
-                    <h5>Design</h5>
-                    <p>Creating wireframes, mockups, and prototypes.</p>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="internship">
+                        <h3>Data Analysis Intern</h3>
+                        <p>Analyze data and create insights using Python and Excel.</p>
+                        <button class="apply-button">Apply Now</button>
+                    </div>
                 </div>
-                <div class="col-md-4 process-step text-center">
-                    <img src="./assets/process/development.png" alt="Development">
-                    <h5>Development</h5>
-                    <p>Implementing features and functionalities through coding.</p>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="internship">
+                        <h3>Mobile App Development Intern</h3>
+                        <p>Develop Android and iOS apps using Flutter and React Native.</p>
+                        <button class="apply-button">Apply Now</button>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 process-step text-center">
-                    <img src="./assets/process/testing.png" alt="Testing">
-                    <h5>Testing</h5>
-                    <p>Identifying and fixing bugs to ensure quality.</p>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="internship">
+                        <h3>Digital Marketing Intern</h3>
+                        <p>Work on SEO, social media marketing, and content creation.</p>
+                        <button class="apply-button">Apply Now</button>
+                    </div>
                 </div>
-                <div class="col-md-4 process-step text-center">
-                    <img src="./assets/process/deployment.png" alt="Deployment">
-                    <h5>Deployment</h5>
-                    <p>Releasing the product to the market or end-users.</p>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="internship">
+                        <h3>Graphic Design Intern</h3>
+                        <p>Create visuals and graphics for websites and social media.</p>
+                        <button class="apply-button">Apply Now</button>
+                    </div>
                 </div>
-                <div class="col-md-4 process-step text-center">
-                    <img src="./assets/process/maintenance.png" alt="Maintenance">
-                    <h5>Maintenance</h5>
-                    <p>Providing ongoing support and updates.</p>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="internship">
+                        <h3>Software Testing Intern</h3>
+                        <p>Test and debug software to ensure quality and performance.</p>
+                        <button class="apply-button">Apply Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="internship">
+                        <h3>Content Writing Intern</h3>
+                        <p>Write engaging content for blogs, articles, and websites.</p>
+                        <button class="apply-button">Apply Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="internship">
+                        <h3>Project Management Intern</h3>
+                        <p>Assist in managing projects, timelines, and deliverables.</p>
+                        <button class="apply-button">Apply Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="internship">
+                        <h3>UX/UI Design Intern</h3>
+                        <p>Design user-friendly interfaces and improve user experience.</p>
+                        <button class="apply-button">Apply Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="internship">
+                        <h3>Cloud Computing Intern</h3>
+                        <p>Learn about cloud services like AWS, Azure, and Google Cloud.</p>
+                        <button class="apply-button">Apply Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="internship">
+                        <h3>AI/ML Intern</h3>
+                        <p>Work on AI/ML projects using Python and TensorFlow.</p>
+                        <button class="apply-button">Apply Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="internship">
+                        <h3>Network Security Intern</h3>
+                        <p>Secure networks and systems by learning cybersecurity techniques.</p>
+                        <button class="apply-button">Apply Now</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -501,11 +649,12 @@
                     </form>
                 </div>
                 <div class="col-md-6">
-                    <h5>Contact Information</h5>
-                    <p>Email: youthtechofficials@gmail.com</p>
-                    <p>Phone: +1 234 567 890</p>
+                    <h5 class="mb-3">Contact Information</h5>
+                    <p class="mb-2">Email: youthtechofficials@gmail.com</p>
+                    <p class="mb-2">Phone: +1 234 567 890</p>
                     <p>Address: Indore, Madhya Pradesh</p>
                 </div>
+
             </div>
         </div>
     </section>
